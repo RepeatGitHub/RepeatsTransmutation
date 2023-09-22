@@ -251,3 +251,21 @@ execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ 
 execute if data block ~ ~-1 ~ {Items:[{Slot:13b,id:"minecraft:sand",Count:64b},{Slot:8b,id:"minecraft:soul_sand",Count:1b}]} run data modify block ~ ~-1 ~ Items append value {Slot:4b,id:"minecraft:stick",Count:1b}
 execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:13b}] set value {Slot:13b,id:"minecraft:gravel",Count:64b}
 execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:4b}] set value {Slot:4b,id:"minecraft:air"}
+
+# azalea>floweringazalea 1batch
+execute if data block ~ ~-1 ~ {Items:[{Slot:13b,id:"minecraft:azalea",Count:1b},{Slot:8b,id:"minecraft:azalea",Count:1b}]} run data modify block ~ ~-1 ~ Items append value {Slot:4b,id:"minecraft:stick",Count:1b}
+execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:13b}] set value {Slot:13b,id:"minecraft:flowering_azalea",Count:1b}
+execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:4b}] set value {Slot:4b,id:"minecraft:air"}
+# azalea>floweringazalea 64batch
+execute if data block ~ ~-1 ~ {Items:[{Slot:13b,id:"minecraft:azalea",Count:64b},{Slot:8b,id:"minecraft:azalea",Count:1b}]} run data modify block ~ ~-1 ~ Items append value {Slot:4b,id:"minecraft:stick",Count:1b}
+execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:13b}] set value {Slot:13b,id:"minecraft:flowering_azalea",Count:64b}
+execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:4b}] set value {Slot:4b,id:"minecraft:air"}
+
+# floweringazalea>azalea 1batch
+execute if data block ~ ~-1 ~ {Items:[{Slot:13b,id:"minecraft:flowering_azalea",Count:1b},{Slot:8b,id:"minecraft:flowering_azalea",Count:1b}]} run data modify block ~ ~-1 ~ Items append value {Slot:4b,id:"minecraft:stick",Count:1b}
+execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:13b}] set value {Slot:13b,id:"minecraft:azalea",Count:1b}
+execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:4b}] set value {Slot:4b,id:"minecraft:air"}
+# floweringazalea>azalea 64batch
+execute if data block ~ ~-1 ~ {Items:[{Slot:13b,id:"minecraft:flowering_azalea",Count:64b},{Slot:8b,id:"minecraft:flowering_azalea",Count:1b}]} run data modify block ~ ~-1 ~ Items append value {Slot:4b,id:"minecraft:stick",Count:1b}
+execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:13b}] set value {Slot:13b,id:"minecraft:azalea",Count:64b}
+execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:4b}] set value {Slot:4b,id:"minecraft:air"}
