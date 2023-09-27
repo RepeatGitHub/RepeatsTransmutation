@@ -208,29 +208,29 @@ execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ 
 execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:4b}] set value {Slot:4b,id:"minecraft:air"}
 
 # coarsedirt>gravel 1batch
-execute if data block ~ ~-1 ~ {Items:[{Slot:13b,id:"minecraft:coarse_dirt",Count:1b},{Slot:8b,id:"minecraft:soul_sand",Count:1b}]} run data modify block ~ ~-1 ~ Items append value {Slot:4b,id:"minecraft:stick",Count:1b}
+execute if data block ~ ~-1 ~ {Items:[{Slot:13b,id:"minecraft:coarse_dirt",Count:1b},{Slot:8b,id:"minecraft:soul_sand",Count:1b},{Slot:17b,id:"minecraft:gravel",Count:1b}]} run data modify block ~ ~-1 ~ Items append value {Slot:4b,id:"minecraft:stick",Count:1b}
 execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:13b}] set value {Slot:13b,id:"minecraft:gravel",Count:1b}
 execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:4b}] set value {Slot:4b,id:"minecraft:air"}
 # coarsedirt>gravel 64batch
-execute if data block ~ ~-1 ~ {Items:[{Slot:13b,id:"minecraft:coarse_dirt",Count:64b},{Slot:8b,id:"minecraft:soul_sand",Count:1b}]} run data modify block ~ ~-1 ~ Items append value {Slot:4b,id:"minecraft:stick",Count:1b}
+execute if data block ~ ~-1 ~ {Items:[{Slot:13b,id:"minecraft:coarse_dirt",Count:64b},{Slot:8b,id:"minecraft:soul_sand",Count:1b},{Slot:17b,id:"minecraft:gravel",Count:1b}]} run data modify block ~ ~-1 ~ Items append value {Slot:4b,id:"minecraft:stick",Count:1b}
 execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:13b}] set value {Slot:13b,id:"minecraft:gravel",Count:64b}
 execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:4b}] set value {Slot:4b,id:"minecraft:air"}
 
 # dirt>gravel 1batch
-execute if data block ~ ~-1 ~ {Items:[{Slot:13b,id:"minecraft:dirt",Count:1b},{Slot:8b,id:"minecraft:soul_sand",Count:1b}]} run data modify block ~ ~-1 ~ Items append value {Slot:4b,id:"minecraft:stick",Count:1b}
+execute if data block ~ ~-1 ~ {Items:[{Slot:13b,id:"minecraft:dirt",Count:1b},{Slot:8b,id:"minecraft:soul_sand",Count:1b},{Slot:17b,id:"minecraft:gravel",Count:1b}]} run data modify block ~ ~-1 ~ Items append value {Slot:4b,id:"minecraft:stick",Count:1b}
 execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:13b}] set value {Slot:13b,id:"minecraft:gravel",Count:1b}
 execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:4b}] set value {Slot:4b,id:"minecraft:air"}
 # dirt>gravel 64batch
-execute if data block ~ ~-1 ~ {Items:[{Slot:13b,id:"minecraft:dirt",Count:64b},{Slot:8b,id:"minecraft:soul_sand",Count:1b}]} run data modify block ~ ~-1 ~ Items append value {Slot:4b,id:"minecraft:stick",Count:1b}
+execute if data block ~ ~-1 ~ {Items:[{Slot:13b,id:"minecraft:dirt",Count:64b},{Slot:8b,id:"minecraft:soul_sand",Count:1b},{Slot:17b,id:"minecraft:gravel",Count:1b}]} run data modify block ~ ~-1 ~ Items append value {Slot:4b,id:"minecraft:stick",Count:1b}
 execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:13b}] set value {Slot:13b,id:"minecraft:gravel",Count:64b}
 execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:4b}] set value {Slot:4b,id:"minecraft:air"}
 
 # gravel>dirt 1batch
-execute if data block ~ ~-1 ~ {Items:[{Slot:13b,id:"minecraft:gravel",Count:1b},{Slot:8b,id:"minecraft:soul_sand",Count:1b}]} run data modify block ~ ~-1 ~ Items append value {Slot:4b,id:"minecraft:stick",Count:1b}
+execute if data block ~ ~-1 ~ {Items:[{Slot:13b,id:"minecraft:gravel",Count:1b},{Slot:8b,id:"minecraft:soul_sand",Count:1b},{Slot:17b,id:"minecraft:dirt",Count:1b}]} run data modify block ~ ~-1 ~ Items append value {Slot:4b,id:"minecraft:stick",Count:1b}
 execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:13b}] set value {Slot:13b,id:"minecraft:dirt",Count:1b}
 execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:4b}] set value {Slot:4b,id:"minecraft:air"}
 # gravel>dirt 64batch
-execute if data block ~ ~-1 ~ {Items:[{Slot:13b,id:"minecraft:gravel",Count:64b},{Slot:8b,id:"minecraft:soul_sand",Count:1b}]} run data modify block ~ ~-1 ~ Items append value {Slot:4b,id:"minecraft:stick",Count:1b}
+execute if data block ~ ~-1 ~ {Items:[{Slot:13b,id:"minecraft:gravel",Count:64b},{Slot:8b,id:"minecraft:soul_sand",Count:1b},{Slot:17b,id:"minecraft:dirt",Count:1b}]} run data modify block ~ ~-1 ~ Items append value {Slot:4b,id:"minecraft:stick",Count:1b}
 execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:13b}] set value {Slot:13b,id:"minecraft:dirt",Count:64b}
 execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:4b}] set value {Slot:4b,id:"minecraft:air"}
 
@@ -268,4 +268,50 @@ execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ 
 # floweringazalea>azalea 64batch
 execute if data block ~ ~-1 ~ {Items:[{Slot:13b,id:"minecraft:flowering_azalea",Count:64b},{Slot:8b,id:"minecraft:flowering_azalea",Count:1b}]} run data modify block ~ ~-1 ~ Items append value {Slot:4b,id:"minecraft:stick",Count:1b}
 execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:13b}] set value {Slot:13b,id:"minecraft:azalea",Count:64b}
+execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:4b}] set value {Slot:4b,id:"minecraft:air"}
+
+# gravel>clay 1batch
+execute if data block ~ ~-1 ~ {Items:[{Slot:13b,id:"minecraft:gravel",Count:1b},{Slot:8b,id:"minecraft:mushroom_stem",Count:1b},{Slot:17b,id:"minecraft:water_bucket",Count:1b}]} run data modify block ~ ~-1 ~ Items append value {Slot:4b,id:"minecraft:stick",Count:1b}
+execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:13b}] set value {Slot:13b,id:"minecraft:clay_ball",Count:1b}
+execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:4b}] set value {Slot:4b,id:"minecraft:air"}
+# gravel>clay 64batch
+execute if data block ~ ~-1 ~ {Items:[{Slot:13b,id:"minecraft:gravel",Count:64b},{Slot:8b,id:"minecraft:mushroom_stem",Count:1b},{Slot:17b,id:"minecraft:water_bucket",Count:1b}]} run data modify block ~ ~-1 ~ Items append value {Slot:4b,id:"minecraft:stick",Count:1b}
+execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:13b}] set value {Slot:13b,id:"minecraft:clay_ball",Count:64b}
+execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:4b}] set value {Slot:4b,id:"minecraft:air"}
+
+# clay>gravel 1batch
+execute if data block ~ ~-1 ~ {Items:[{Slot:13b,id:"minecraft:clay_ball",Count:1b},{Slot:8b,id:"minecraft:mushroom_stem",Count:1b},{Slot:17b,id:"minecraft:bucket",Count:1b}]} run data modify block ~ ~-1 ~ Items append value {Slot:4b,id:"minecraft:stick",Count:1b}
+execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:13b}] set value {Slot:13b,id:"minecraft:gravel",Count:1b}
+execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:4b}] set value {Slot:4b,id:"minecraft:air"}
+# clay>gravel 64batch
+execute if data block ~ ~-1 ~ {Items:[{Slot:13b,id:"minecraft:clay_ball",Count:64b},{Slot:8b,id:"minecraft:mushroom_stem",Count:1b},{Slot:17b,id:"minecraft:bucket",Count:1b}]} run data modify block ~ ~-1 ~ Items append value {Slot:4b,id:"minecraft:stick",Count:1b}
+execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:13b}] set value {Slot:13b,id:"minecraft:gravel",Count:64b}
+execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:4b}] set value {Slot:4b,id:"minecraft:air"}
+
+# cobble>gravel 1batch
+execute if data block ~ ~-1 ~ {Items:[{Slot:13b,id:"minecraft:cobblestone",Count:1b},{Slot:8b,id:"minecraft:soul_sand",Count:1b},{Slot:17b,id:"minecraft:gravel",Count:1b}]} run data modify block ~ ~-1 ~ Items append value {Slot:4b,id:"minecraft:stick",Count:1b}
+execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:13b}] set value {Slot:13b,id:"minecraft:gravel",Count:1b}
+execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:4b}] set value {Slot:4b,id:"minecraft:air"}
+# cobble>gravel 64batch
+execute if data block ~ ~-1 ~ {Items:[{Slot:13b,id:"minecraft:cobblestone",Count:64b},{Slot:8b,id:"minecraft:soul_sand",Count:1b},{Slot:17b,id:"minecraft:gravel",Count:1b}]} run data modify block ~ ~-1 ~ Items append value {Slot:4b,id:"minecraft:stick",Count:1b}
+execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:13b}] set value {Slot:13b,id:"minecraft:gravel",Count:64b}
+execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:4b}] set value {Slot:4b,id:"minecraft:air"}
+
+# gravel>cobble 1batch
+execute if data block ~ ~-1 ~ {Items:[{Slot:13b,id:"minecraft:gravel",Count:1b},{Slot:8b,id:"minecraft:soul_sand",Count:1b},{Slot:17b,id:"minecraft:cobblestone",Count:1b}]} run data modify block ~ ~-1 ~ Items append value {Slot:4b,id:"minecraft:stick",Count:1b}
+execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:13b}] set value {Slot:13b,id:"minecraft:cobblestone",Count:1b}
+execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:4b}] set value {Slot:4b,id:"minecraft:air"}
+# gravel>cobble 64batch
+execute if data block ~ ~-1 ~ {Items:[{Slot:13b,id:"minecraft:gravel",Count:64b},{Slot:8b,id:"minecraft:soul_sand",Count:1b},{Slot:17b,id:"minecraft:cobblestone",Count:1b}]} run data modify block ~ ~-1 ~ Items append value {Slot:4b,id:"minecraft:stick",Count:1b}
+execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:13b}] set value {Slot:13b,id:"minecraft:cobblestone",Count:64b}
+execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:4b}] set value {Slot:4b,id:"minecraft:air"}
+
+# water>morewater 1batch
+execute if data block ~ ~-1 ~ {Items:[{Slot:13b,id:"minecraft:water_bucket",Count:1b},{Slot:8b,id:"minecraft:bucket",Count:1b}]} run data modify block ~ ~-1 ~ Items append value {Slot:4b,id:"minecraft:stick",Count:1b}
+execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:8b}] set value {Slot:8b,id:"minecraft:water_bucket",Count:1b}
+execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:4b}] set value {Slot:4b,id:"minecraft:air"}
+
+# junglesapling>mangrovepropagule 1batch
+execute if data block ~ ~-1 ~ {Items:[{Slot:13b,id:"minecraft:bamboo",Count:1b},{Slot:8b,id:"minecraft:mud",Count:1b}]} run data modify block ~ ~-1 ~ Items append value {Slot:4b,id:"minecraft:stick",Count:1b}
+execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:13b}] set value {Slot:13b,id:"minecraft:mangrove_propagule",Count:1b}
 execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:4b}] set value {Slot:4b,id:"minecraft:air"}
