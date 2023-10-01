@@ -312,7 +312,7 @@ execute if data block ~ ~-1 ~ {Items:[{Slot:13b,id:"minecraft:water_bucket",Coun
 execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:8b}] set value {Slot:8b,id:"minecraft:water_bucket",Count:1b}
 execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:4b}] set value {Slot:4b,id:"minecraft:air"}
 
-# junglesapling>mangrovepropagule 1batch
+# bamboo>mangrovepropagule 1batch
 execute if data block ~ ~-1 ~ {Items:[{Slot:13b,id:"minecraft:bamboo",Count:1b},{Slot:8b,id:"minecraft:mud",Count:1b}]} run data modify block ~ ~-1 ~ Items append value {Slot:4b,id:"minecraft:stick",Count:1b}
 execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:13b}] set value {Slot:13b,id:"minecraft:mangrove_propagule",Count:1b}
 execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:4b}] set value {Slot:4b,id:"minecraft:air"}
