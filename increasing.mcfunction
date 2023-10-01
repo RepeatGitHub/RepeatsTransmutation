@@ -3,6 +3,7 @@
 #   4batch, which is 4 batch
 #   8batch, which is 8 batch
 #   9batch, which is 9 batch
+#   9batch, which is 16 batch
 #   64batch, which is a stack batch
 
 
@@ -114,4 +115,47 @@ execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ 
 # brownmushroom>brownmushroomblock 4batch
 execute if data block ~ ~-1 ~ {Items:[{Slot:13b,id:"minecraft:brown_mushroom",Count:36b},{Slot:8b,id:"minecraft:mushroom_stem",Count:1b},{Slot:17b,id:"minecraft:brown_mushroom",Count:1b}]} run data modify block ~ ~-1 ~ Items append value {Slot:4b,id:"minecraft:stick",Count:1b}
 execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:13b}] set value {Slot:13b,id:"minecraft:brown_mushroom_block",Count:4b}
+execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:4b}] set value {Slot:4b,id:"minecraft:air"}
+
+# cobble>obsidian 1batch
+execute if data block ~ ~-1 ~ {Items:[{Slot:13b,id:"minecraft:cobblestone",Count:32b},{Slot:8b,id:"minecraft:diamond_block",Count:1b}]} run data modify block ~ ~-1 ~ Items append value {Slot:4b,id:"minecraft:stick",Count:1b}
+execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:13b}] set value {Slot:13b,id:"minecraft:obsidian",Count:1b}
+execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:4b}] set value {Slot:4b,id:"minecraft:air"}
+
+# bonemeal>bamboo 1batch
+execute if data block ~ ~-1 ~ {Items:[{Slot:13b,id:"minecraft:bone_meal",Count:8b},{Slot:8b,id:"minecraft:jungle_sapling",Count:1b}]} run data modify block ~ ~-1 ~ Items append value {Slot:4b,id:"minecraft:stick",Count:1b}
+execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:13b}] set value {Slot:13b,id:"minecraft:bamboo",Count:1b}
+execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:4b}] set value {Slot:4b,id:"minecraft:air"}
+# bonemeal>cocoabeans 1batch
+execute if data block ~ ~-1 ~ {Items:[{Slot:13b,id:"minecraft:bone_meal",Count:16b},{Slot:8b,id:"minecraft:jungle_sapling",Count:1b}]} run data modify block ~ ~-1 ~ Items append value {Slot:4b,id:"minecraft:stick",Count:1b}
+execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:13b}] set value {Slot:13b,id:"minecraft:cocoa_beans",Count:1b}
+execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:4b}] set value {Slot:4b,id:"minecraft:air"}
+# bonemeal>cocoabeans 1batch
+execute if data block ~ ~-1 ~ {Items:[{Slot:13b,id:"minecraft:bone_meal",Count:24b},{Slot:8b,id:"minecraft:jungle_sapling",Count:1b}]} run data modify block ~ ~-1 ~ Items append value {Slot:4b,id:"minecraft:stick",Count:1b}
+execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:13b}] set value {Slot:13b,id:"minecraft:melon",Count:1b}
+execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:4b}] set value {Slot:4b,id:"minecraft:air"}
+
+# amethyst>buddingamethyst 1batch
+execute if data block ~ ~-1 ~ {Items:[{Slot:13b,id:"minecraft:amethyst_shard",Count:32b},{Slot:8b,id:"minecraft:amethyst_shard",Count:1b}]} run data modify block ~ ~-1 ~ Items append value {Slot:4b,id:"minecraft:stick",Count:1b}
+execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:13b}] set value {Slot:13b,id:"minecraft:budding_amethyst",Count:1b,tag:{display:{Lore:['{"text":"Not obtainable through Silk Touch,","italic":false}','{"text":"so don\'t mine it once it\'s placed!","italic":false}']}}}
+execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:4b}] set value {Slot:4b,id:"minecraft:air"}
+
+# netherbrick>rednetherbricks~netherwart 1batch
+execute if data block ~ ~-1 ~ {Items:[{Slot:13b,id:"minecraft:nether_brick",Count:2b},{Slot:8b,id:"minecraft:nether_wart",Count:2b}]} run data modify block ~ ~-1 ~ Items append value {Slot:4b,id:"minecraft:stick",Count:1b}
+execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:13b}] set value {Slot:13b,id:"minecraft:red_nether_bricks",Count:1b}
+execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:8b}] set value {Slot:8b,id:"minecraft:air"}
+execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:4b}] set value {Slot:4b,id:"minecraft:air"}
+# netherbrick>rednetherbricks~netherwart 32batch
+execute if data block ~ ~-1 ~ {Items:[{Slot:13b,id:"minecraft:nether_brick",Count:64b},{Slot:8b,id:"minecraft:nether_wart",Count:64b}]} run data modify block ~ ~-1 ~ Items append value {Slot:4b,id:"minecraft:stick",Count:1b}
+execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:13b}] set value {Slot:13b,id:"minecraft:red_nether_bricks",Count:32b}
+execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:8b}] set value {Slot:8b,id:"minecraft:air"}
+execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:4b}] set value {Slot:4b,id:"minecraft:air"}
+
+# netherbrick>rednetherbricks~rednetherbricks 1batch
+execute if data block ~ ~-1 ~ {Items:[{Slot:13b,id:"minecraft:nether_brick",Count:2b},{Slot:8b,id:"minecraft:red_nether_bricks",Count:1b}]} run data modify block ~ ~-1 ~ Items append value {Slot:4b,id:"minecraft:stick",Count:1b}
+execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:13b}] set value {Slot:13b,id:"minecraft:red_nether_bricks",Count:1b}
+execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:4b}] set value {Slot:4b,id:"minecraft:air"}
+# netherbrick>rednetherbricks~rednetherbricks 32batch
+execute if data block ~ ~-1 ~ {Items:[{Slot:13b,id:"minecraft:nether_brick",Count:64b},{Slot:8b,id:"minecraft:red_nether_bricks",Count:1b}]} run data modify block ~ ~-1 ~ Items append value {Slot:4b,id:"minecraft:stick",Count:1b}
+execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:13b}] set value {Slot:13b,id:"minecraft:red_nether_bricks",Count:32b}
 execute if data block ~ ~-1 ~ {Items:[{Slot:4b}]} run data modify block ~ ~-1 ~ Items[{Slot:4b}] set value {Slot:4b,id:"minecraft:air"}
