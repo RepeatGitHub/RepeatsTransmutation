@@ -20,7 +20,7 @@ execute if data block ~ ~-1 ~ {Items:[{Slot:13b,id:"minecraft:acacia_sapling",Co
 execute if data block ~ ~-1 ~ {Items:[{Slot:13b,id:"minecraft:acacia_sapling",Count:64b},{Slot:8b,id:"minecraft:acacia_sapling",Count:1b}]} run data modify block ~ ~-1 ~ Items[{Slot:13b}] set value {Slot:13b,id:"minecraft:dark_oak_sapling",Count:64b}
 
 # jungle>acacia 1batch
-execute if data block ~ ~-1 ~ {Items:[{Slot:13b,id:"minecraft:jungle_sapling",Count:1b},{Slot:8b,id:"minecraft: jungle_sapling",Count:1b}]} run data modify block ~ ~-1 ~ Items[{Slot:13b}] set value {Slot:13b,id:"minecraft:acacia_sapling",Count:1b}
+execute if data block ~ ~-1 ~ {Items:[{Slot:13b,id:"minecraft:jungle_sapling",Count:1b},{Slot:8b,id:"minecraft:jungle_sapling",Count:1b}]} run data modify block ~ ~-1 ~ Items[{Slot:13b}] set value {Slot:13b,id:"minecraft:acacia_sapling",Count:1b}
 # jungle>acacia 64batch
 execute if data block ~ ~-1 ~ {Items:[{Slot:13b,id:"minecraft:jungle_sapling",Count:64b},{Slot:8b,id:"minecraft:jungle_sapling",Count:1b}]} run data modify block ~ ~-1 ~ Items[{Slot:13b}] set value {Slot:13b,id:"minecraft:acacia_sapling",Count:64b}
 
